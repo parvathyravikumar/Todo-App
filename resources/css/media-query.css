@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+  .list-icons{
+    display:none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .list-dropdown,.dropdown-menu{
+    display:none !important;
+  }
+  .list-icons{
+    display:block;
+  }
+}
