@@ -2,6 +2,7 @@
   .list-icons{
     display:none;
   }
+
 }
 @media screen and (min-width: 600px) {
   .list-dropdown,.dropdown-menu{
@@ -9,5 +10,15 @@
   }
   .list-icons{
     display:block;
+  }
+}
+
+@media screen and (max-width: 575px){
+  header div.container{
+    padding-left:20px;
+    padding-right:20px;
+  }
+  header div.space-banner{
+    width:0% !important;
   }
 }

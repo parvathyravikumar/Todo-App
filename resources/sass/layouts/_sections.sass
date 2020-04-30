@@ -1,52 +1,32 @@
 section.bottom-container
   width: 100%
-  padding: 20px 30px
+  padding: 52px 30px
   box-sizing: border-box
   display: inline-block
-  .form-control
-    border-top-right-radius: .25rem
-    border-bottom-right-radius: .25rem
-
-div.list-container
-  padding: 10px
-  margin-top: 1%
-  height: 100%
-  max-height: 475px
   overflow: auto
-  background-color: $todo-light
-  border: 1px solid #dedede
-  div.input-container
-    padding: 10px
-    .fa
-      font-size: 24px
-      padding: 7px
-      &:hover
-        cursor: pointer
-  .list-textbox
-    width: 100%
-    border: none
+  div.input-group div.form-control
+    +border-rad(.25rem)
+    padding: 0
 
-  .dropdown-menu
-    position: absolute
-    top: 100%
-    right: 0
-    left: unset
-    z-index: 1000
-    display: none
-    float: right
-    min-width: 0rem
-    padding: .5rem 0
-    margin: .125rem 0 0
-    font-size: 1rem
-    color: #212529
-    text-align: left
-    list-style: none
-    background-color: $todo-light
-    background-clip: padding-box
-    border: 1px solid rgba(0,0,0,.15)
-    border-radius: .25rem
-.fav-list-container
+section.bottom-container.favList
   display: none
-  .form-control
-    border-top-right-radius: .25rem
-    border-bottom-right-radius: .25rem
+  div.form-control
+    +border-rad(.25rem)
+    padding: 0 .55rem
+    input
+      width: 100%
+      height: 100%
+      padding: 0 0.55rem
+div.main-container div.form-control
+  +border(0 0 4px #555)
+  padding: 0
+  .list-textbox
+    text-align: center
+    width: 100%
+    height: 100%
+    padding: 0 0.55rem
+    &:hover
+      cursor: pointer
+
+section.bottom-container.newFolders
+  display: none
